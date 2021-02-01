@@ -13,23 +13,20 @@ end
 
 p "Welcome to TicTacToe"
 
-board = Board.new
-player = Player.new("X")
-player = Player::Human.new("Test")
 mode = get_mode
 
 player_1 = nil, player_2 = nil
 case mode
   when 0
-    player_1 = Player::Computer.new("X")
-    player_2 = Player::Computer.new("O")
+    player_1 = Players::Computer.new("X")
+    player_2 = Players::Computer.new("O")
   when 1
-    player_1 = Player::Human.new("X")
-    player_2 = Player::Computer.new("O")
+    player_1 = Players::Human.new("X")
+    player_2 = Players::Computer.new("O")
    # load second player as bot
   when 2
-   player_1 = Player::Human.new("X")
-   player_2 = Player::Human.new("O")
+   player_1 = Players::Human.new("X")
+   player_2 = Players::Human.new("O")
 end
 
 p "Who would you like to go first and be 'X'? (1 or 2)"
