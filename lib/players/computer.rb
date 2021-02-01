@@ -10,7 +10,7 @@ module Players
         return "5"
       end
 
-      if board.turn_count == 1
+      if board.turn_count == 1 || board.turn_count == 2
         return !board.taken?("3") ? "3" : "1"
       end
 
