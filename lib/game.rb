@@ -1,4 +1,3 @@
-require 'pry'
 class Game
 
   WIN_COMBINATIONS =
@@ -37,7 +36,6 @@ class Game
     player = current_player
     move = player.move(board)
 
-    binding.pry
     board.valid_move?(move) ? board.update(move, player) : turn
     board.display
   end
