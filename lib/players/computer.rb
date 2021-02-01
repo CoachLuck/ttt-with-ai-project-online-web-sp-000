@@ -6,7 +6,7 @@ module Players
     end
 
     def move(board)
-      if board.turn_count == 0
+      if board.turn_count == 0 || !board.taken?("5")
         return "5"
       end
 
