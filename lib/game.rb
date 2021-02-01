@@ -38,6 +38,7 @@ class Game
     move = player.move(board)
 
     board.valid_move?(move) ? board.update(move, player) : turn
+    board.display
   end
 
   def current_player
