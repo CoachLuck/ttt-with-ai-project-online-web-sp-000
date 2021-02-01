@@ -39,7 +39,6 @@ class Game
 
     board.valid_move?(move) ? board.update(move, player) : turn
     board.display
-    p ``
   end
 
   def current_player
