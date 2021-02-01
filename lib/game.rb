@@ -39,7 +39,7 @@ class Game
 
     board.valid_move?(move) ? board.update(move, player) : turn
     board.display
-    p ""
+    p `\n`
   end
 
   def current_player
