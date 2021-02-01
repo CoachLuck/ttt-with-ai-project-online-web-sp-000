@@ -38,4 +38,4 @@ else
   game = Game.new(player_1, player_2, Board.new)
 end
 
-game.play untile game.over?
+game.play until game.over?
